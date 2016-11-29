@@ -92,4 +92,6 @@ assert test.vergleichen('+49', '40', '85390', '0049/40-8539-0')
 assert !test.vergleichen('+49', '40', '85390', '085390')
 assert !test.vergleichen('+49', '40', '85390', '0049040-8539-0')
 
+assert test.vergleichen('+49', '40', ' 0170-7654790', '+49 (0)170-7654790')
+
 println "\nall Tests succeeded\n"
